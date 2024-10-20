@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+    <style>
+        body{
+            background-image: url(https://rebortec.com/wp-content/uploads/2015/06/workforce_management_banner-e1433598945742.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+     h1{
+        color: white;
+        background: transparent;
+        text-align: center;
+     }
+     div{
+        margin-top: 30px;
+        text-align: center;
+        color:rgb(5, 5, 5) ;
+     }
+button{
+    
+    border: solid;
+    color:black;
+    background: transparent;
+    width: 150px;
+}
+form{
+    margin-top: 10%;
+    margin-right: 30%;
+    color: white;
+    height: 100%;
+    text-align:justify;
+    align-items:start;
+    font-size: 20px;
+}
+input{
+    font-size:15px;
+    color: black;
+    background-color: white;
+}
+a{
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <form action="Employee_servlet" method="post">
+        <div>
+            <h2>Employee Management System</h2>
+        </div>
+        <div>
+        ID:<input type="number" name="id" required placeholder="Enter your id"><br>
+    </div>
+    <div>
+        NAME:<input type="text" name="name" required placeholder="Enter your name"><br>
+    </div>
+    <div>
+        EMAIL:<input type="email" name="email" required placeholder="Enter your email"><br>
+    </div>
+    <div>
+        CONTACT:<input type="number" name="contact" placeholder="Enter your mobile number"><br>
+    </div>
+    <div>
+        ADDRESS:<input type="text" name="address" placeholder="Enter your address"><br>
+    </div>
+        <div>
+        <button type="submit">REGISTER</button> <br>
+    </div>
+       
+        <div>
+        <a href="EmployeeDataFetch" target="_blank">Fetch Data</a>
+    </div>
+        </form>
+</body>
+</html>
